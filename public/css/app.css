@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap);
+header .navbar {
+  height: 5.5rem;
+  background-color: white;
+}
+header .container {
+  margin: auto;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .img-link {
+  height: 100%;
+  padding: 0.9rem;
+}
+header .img-link img {
+  height: 100%;
+}
+header ul {
+  height: 100%;
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  gap: 2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #464646;
+}
+header ul li {
+  height: 100%;
+  position: relative;
+}
+header ul li:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #0282f9;
+}
+header ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+header ul li a:visited, header ul li a:hover, header ul li a:active {
+  color: inherit;
+}
+
+.jumbotron {
+  position: relative;
+  height: 21.5rem;
+  background-image: url("/images/jumbotron.jpg");
+  background-size: cover;
+}
+
+footer .background {
+  position: relative;
+  overflow: hidden;
+  gap: 10rem;
+  background-image: url("/images/footer-bg.jpg");
+  background-size: cover;
+  padding: 2.5rem 0 4.5rem 4.5rem;
+}
+footer .background .blocks {
+  display: flex;
+  gap: 5rem;
+  font-size: 0.7rem;
+  color: white;
+  margin-left: 4rem;
+}
+footer .background .blocks .left-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .background .blocks ul {
+  list-style: none;
+}
+footer .background .blocks ul h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+footer .background .blocks ul li {
+  color: #7f807b;
+  margin-bottom: 0.5rem;
+}
+footer .background .blocks ul li a {
+  text-decoration: none;
+}
+footer .background .blocks ul li a:visited, footer .background .blocks ul li a:hover, footer .background .blocks ul li a:active {
+  color: inherit;
+}
+footer .background img {
+  width: 40%;
+  position: absolute;
+  top: -6.5rem;
+  left: 50rem;
+}
+footer .sub-footer {
+  height: 5rem;
+  background-color: #303030;
+}
+footer .sub-footer .container {
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .sub-footer .container button {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.6rem 0.8rem;
+  background-color: transparent;
+  border: 2px solid #0282f9;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer .sub-footer .container .block-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+footer .sub-footer .container .block-left a {
+  width: 9%;
+}
+footer .sub-footer .container .block-left a img {
+  width: 100%;
+}
+footer .sub-footer .container .block-left span {
+  color: #0282f9;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+main {
+  background-color: #1c1c1c;
+}
+main .current-series {
+  background-color: #0282f9;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  left: 9.5rem;
+  transform: translateY(-22px);
+  z-index: 10;
+  padding: 0.6rem 1.4rem;
+}
+main .container {
+  margin: 0 auto;
+  padding: 2.5rem 0 1rem 0;
+  max-width: 1200px;
+  display: flex;
+  row-gap: 2.8rem;
+  flex-wrap: wrap;
+}
+main .card-comics {
+  flex: 0 0 16.6666666667%;
+}
+main button {
+  margin: auto;
+  padding: 0.5rem 3.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background-color: #0282f9;
+}
+main img {
+  width: 90%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 2px 5px;
+     object-position: 2px 5px;
+}
+main .text {
+  max-width: 160px;
+  margin-top: 0.8rem;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.shop {
+  background-color: #0282f9;
+  padding: 2.5rem;
+}
+.shop .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+.shop .container .block {
+  flex: 0 1 20%;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.shop .container .block img {
+  width: 20%;
+}
+.shop .container .block span {
+  width: 80%;
+  font-size: 0.8rem;
+  color: white;
+}
+.shop .container .block span a {
+  text-decoration: none;
+}
+.shop .container .block span a:visited, .shop .container .block span a:hover, .shop .container .block span a:active {
+  color: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
