@@ -116,3 +116,14 @@ Route::get('/shop', function () {
         'footermenu'=> $footermenu,
     ]);
 })->name('shop');
+
+Route::get('/single', function () {
+    $headermenu = config('headermenu');
+    $comics =config('comics');
+    $footermenu = config('footermenu');
+    return view('guest.single', [
+        'headermenu'=> $headermenu,
+        'comics'=> $comics,
+        'footermenu'=> $footermenu,
+    ]);
+})->name('single');
